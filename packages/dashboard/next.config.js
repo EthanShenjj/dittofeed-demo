@@ -19,6 +19,12 @@ const nextConfig = {
   images: {
     domains: ["*"],
   },
+  async rewrites() {
+    const backendOrigin = process.env.BACKEND_ORIGIN;
+    return backendOrigin
+      ? [{ source: "/api/:path*", destination: `${backendOrigin}/api/:path*`, basePath: false }]
+      : [];
+  },
   async headers() {
     return [
       {

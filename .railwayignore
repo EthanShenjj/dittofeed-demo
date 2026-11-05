@@ -1,0 +1,17 @@
+.git
+.env
+.env.*
+.tmp
+.vercel
+node_modules
+**/node_modules
+**/.next
+**/dist
+**/*.tsbuildinfo
+packages/docs
+packages/dashboard
+packages/lite
+packages/admin-cli
+examples
+helm-charts
+render

@@ -66,7 +66,7 @@
     "isomorphic-lib": "0.0.3",
     "lorem-ipsum": "^2.0.8",
     "neverthrow": "^6.0.0",
-    "next": "13.5.6",
+    "next": "13.5.11",
     "notistack": "^3.0.1",
     "qs": "6.11.0",
     "react": "18.3.1",
@@ -146,7 +146,7 @@
     "utility-types": "^3.10.0"
   },
   "optionalDependencies": {
-    "@next/swc-linux-arm64-gnu": "13.5.6",
-    "@next/swc-linux-arm64-musl": "13.5.6"
+    "@next/swc-linux-arm64-gnu": "13.5.9",
+    "@next/swc-linux-arm64-musl": "13.5.9"
   }
 }

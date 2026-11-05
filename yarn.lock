@@ -4680,6 +4680,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@graphql-typed-document-node/core@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@graphql-typed-document-node/core@npm:3.2.0"
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: 10/fa44443accd28c8cf4cb96aaaf39d144a22e8b091b13366843f4e97d19c7bfeaf609ce3c7603a4aeffe385081eaf8ea245d078633a7324c11c5ec4b2011bb76d
+  languageName: node
+  linkType: hard
+
 "@grpc/grpc-js@npm:^1.12.4":
   version: 1.14.3
   resolution: "@grpc/grpc-js@npm:1.14.3"
@@ -6141,6 +6150,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/env@npm:13.5.11":
+  version: 13.5.11
+  resolution: "@next/env@npm:13.5.11"
+  checksum: 10/2d34ec742e28b4da54b7bfe62eb27c1c90f927f0dfe387a0af8c1a535faf75d80475e58a33472bdf722bab02349be074935e2bdf512b5fd0a46dab364700dd3d
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/env@npm:13.5.6"
@@ -6164,9 +6180,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-darwin-arm64@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-darwin-arm64@npm:13.5.9"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-x64@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-darwin-x64@npm:13.5.6"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-darwin-x64@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-darwin-x64@npm:13.5.9"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -6178,9 +6208,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-arm64-gnu@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-linux-arm64-gnu@npm:13.5.9"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-arm64-musl@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-linux-arm64-musl@npm:13.5.6"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-arm64-musl@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-linux-arm64-musl@npm:13.5.9"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
@@ -6192,9 +6236,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-x64-gnu@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-linux-x64-gnu@npm:13.5.9"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-x64-musl@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-linux-x64-musl@npm:13.5.6"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-x64-musl@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-linux-x64-musl@npm:13.5.9"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -6206,6 +6264,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-win32-arm64-msvc@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-win32-arm64-msvc@npm:13.5.9"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-ia32-msvc@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-win32-ia32-msvc@npm:13.5.6"
@@ -6213,9 +6278,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-win32-ia32-msvc@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-win32-ia32-msvc@npm:13.5.9"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-x64-msvc@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-win32-x64-msvc@npm:13.5.6"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-win32-x64-msvc@npm:13.5.9":
+  version: 13.5.9
+  resolution: "@next/swc-win32-x64-msvc@npm:13.5.9"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -16857,8 +16936,8 @@ __metadata:
     "@mui/material": "npm:^5.15.5"
     "@mui/x-data-grid": "npm:^6.19.11"
     "@mui/x-date-pickers": "npm:^7.24.0"
-    "@next/swc-linux-arm64-gnu": "npm:13.5.6"
-    "@next/swc-linux-arm64-musl": "npm:13.5.6"
+    "@next/swc-linux-arm64-gnu": "npm:13.5.9"
+    "@next/swc-linux-arm64-musl": "npm:13.5.9"
     "@sinclair/typebox": "npm:0.34.37"
     "@tanstack/eslint-plugin-query": "npm:^5.62.16"
     "@tanstack/react-query": "npm:^5.64.1"
@@ -16917,7 +16996,7 @@ __metadata:
     jest-expect-message: "npm:^1.1.3"
     lorem-ipsum: "npm:^2.0.8"
     neverthrow: "npm:^6.0.0"
-    next: "npm:13.5.6"
+    next: "npm:13.5.11"
     notistack: "npm:^3.0.1"
     prettier: "npm:3.2.5"
     prosemirror-changeset: "npm:2.2.1"
@@ -17376,6 +17455,7 @@ __metadata:
     jest-runner-groups: "npm:^2.2.0"
     prettier: "npm:3.2.5"
     prettier-eslint: "npm:^16.3.0"
+    railway: "npm:^3.16.0"
     ts-jest: "npm:^29.2.5"
     ts-node: "npm:10.9.1"
     typescript: "npm:5.6.3"
@@ -20505,6 +20585,13 @@ __metadata:
   dependencies:
     lodash: "npm:^4.17.15"
   checksum: 10/37cbd851d3c1fb99f3174750ccaa22305d23d11746e5df81a38ba3bf25c0ba29cd9658ba69a0159ea81d56c28e8e875033eeaaa7167d838419fae08d9cd2c62c
+  languageName: node
+  linkType: hard
+
+"graphql@npm:^16.10.0":
+  version: 16.15.0
+  resolution: "graphql@npm:16.15.0"
+  checksum: 10/95f0932151ff65ff4bbfb0ff4fea14c280fc811c2b4ddf3841e9e6e1ac1d6ba42e8171161463822024e785f554a66ed7842ae9b827fa0ad43776b55a6eca08bb
   languageName: node
   linkType: hard
 
@@ -25402,6 +25489,61 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next@npm:13.5.11":
+  version: 13.5.11
+  resolution: "next@npm:13.5.11"
+  dependencies:
+    "@next/env": "npm:13.5.11"
+    "@next/swc-darwin-arm64": "npm:13.5.9"
+    "@next/swc-darwin-x64": "npm:13.5.9"
+    "@next/swc-linux-arm64-gnu": "npm:13.5.9"
+    "@next/swc-linux-arm64-musl": "npm:13.5.9"
+    "@next/swc-linux-x64-gnu": "npm:13.5.9"
+    "@next/swc-linux-x64-musl": "npm:13.5.9"
+    "@next/swc-win32-arm64-msvc": "npm:13.5.9"
+    "@next/swc-win32-ia32-msvc": "npm:13.5.9"
+    "@next/swc-win32-x64-msvc": "npm:13.5.9"
+    "@swc/helpers": "npm:0.5.2"
+    busboy: "npm:1.6.0"
+    caniuse-lite: "npm:^1.0.30001406"
+    postcss: "npm:8.4.31"
+    styled-jsx: "npm:5.1.1"
+    watchpack: "npm:2.4.0"
+  peerDependencies:
+    "@opentelemetry/api": ^1.1.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    sass: ^1.3.0
+  dependenciesMeta:
+    "@next/swc-darwin-arm64":
+      optional: true
+    "@next/swc-darwin-x64":
+      optional: true
+    "@next/swc-linux-arm64-gnu":
+      optional: true
+    "@next/swc-linux-arm64-musl":
+      optional: true
+    "@next/swc-linux-x64-gnu":
+      optional: true
+    "@next/swc-linux-x64-musl":
+      optional: true
+    "@next/swc-win32-arm64-msvc":
+      optional: true
+    "@next/swc-win32-ia32-msvc":
+      optional: true
+    "@next/swc-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@opentelemetry/api":
+      optional: true
+    sass:
+      optional: true
+  bin:
+    next: dist/bin/next
+  checksum: 10/9f116a7391bb81b6c7b96b825b68be2be849ef3ac85a6b9d0939f0ca8e0b5aa1b53db2a96f6b44fdf0b3d31ea0a2b7150218ed033660b99780f820db1baba709
+  languageName: node
+  linkType: hard
+
 "next@npm:13.5.6":
   version: 13.5.6
   resolution: "next@npm:13.5.6"
@@ -27566,6 +27708,18 @@ __metadata:
   version: 4.0.4
   resolution: "quick-format-unescaped@npm:4.0.4"
   checksum: 10/591eca457509a99368b623db05248c1193aa3cedafc9a077d7acab09495db1231017ba3ad1b5386e5633271edd0a03b312d8640a59ee585b8516a42e15438aa7
+  languageName: node
+  linkType: hard
+
+"railway@npm:^3.16.0":
+  version: 3.16.0
+  resolution: "railway@npm:3.16.0"
+  dependencies:
+    "@graphql-typed-document-node/core": "npm:^3.2.0"
+    graphql: "npm:^16.10.0"
+  bin:
+    railway-iac-ts: dist/iac/bin.js
+  checksum: 10/94e158b80fc42fb589c251776b147ae6d82bb4fc710ef048826b425834960ad61b3c5168c8b502ffccb9d418aa5be54cdd254f5edabfdb6ccb768c5b16676bb1
   languageName: node
   linkType: hard
 

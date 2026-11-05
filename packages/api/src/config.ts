@@ -37,7 +37,7 @@ export type Config = Overwrite<
 >;
 function parseRawConfig(raw: RawConfig): Config {
   const nodeEnv = raw.nodeEnv ?? "development";
-  const port = Number(raw.apiPort);
+  const port = Number(raw.apiPort ?? process.env.PORT);
   const bodyLimit = Number(raw.apiBodyLimit);
 
   return {

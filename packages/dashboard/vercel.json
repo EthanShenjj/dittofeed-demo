@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "cd ../.. && yarn workspaces focus dashboard",
+  "buildCommand": "cd ../.. && yarn workspace emailo build && yarn workspace isomorphic-lib build && yarn workspace backend-lib build && yarn workspace dashboard build"
+}

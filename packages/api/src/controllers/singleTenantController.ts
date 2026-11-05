@@ -6,6 +6,13 @@ import { FastifyInstance } from "fastify";
 
 // eslint-disable-next-line @typescript-eslint/require-await
 export default async function authController(fastify: FastifyInstance) {
+  fastify.get("/session", async (request, reply) => {
+    return reply
+      .header("Cache-Control", "private, no-store")
+      .status(request.session.get(SESSION_KEY) === true ? 204 : 401)
+      .send();
+  });
+
   fastify.withTypeProvider<TypeBoxTypeProvider>().post(
     "/login",
     {

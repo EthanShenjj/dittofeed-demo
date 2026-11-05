@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import NavCard from "../../components/layout/drawer/drawerContent/navCard";
+import { sessionHeaders } from "../../lib/sessionHeaders";
 import { useSingleTenantLoginMutation } from "../../lib/useSingleTenantLoginMutation";
 import { getWarningStyles } from "../../lib/warningTheme";
 
@@ -28,7 +29,7 @@ export const getServerSideProps: GetServerSideProps<
       },
     };
   }
-  if (ctx.req.headers[SESSION_KEY] === "true") {
+  if ((await sessionHeaders(ctx.req.headers))[SESSION_KEY] === "true") {
     return {
       redirect: {
         permanent: false,

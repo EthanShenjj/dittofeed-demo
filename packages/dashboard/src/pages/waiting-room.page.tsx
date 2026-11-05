@@ -9,6 +9,7 @@ import Link from "next/link";
 
 import DiscordLink from "../components/discordLink";
 import SupportEmailLink from "../components/supportEmailLink";
+import { sessionHeaders } from "../lib/sessionHeaders";
 import { PropsWithInitialState } from "../lib/types";
 
 interface WaitingRoomProps {
@@ -22,7 +23,10 @@ export const getServerSideProps: GetServerSideProps<
 > = async (ctx) => {
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   const { profile } = ctx.req as { profile?: OpenIdProfile };
-  const rc = await getRequestContext(ctx.req.headers, profile);
+  const rc = await getRequestContext(
+    await sessionHeaders(ctx.req.headers),
+    profile,
+  );
   if (rc.isOk()) {
     return {
       redirect: {

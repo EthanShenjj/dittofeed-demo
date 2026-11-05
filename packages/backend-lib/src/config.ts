@@ -234,8 +234,8 @@ function defaultChUrl(inputURL?: string, protocolOverride?: string): string {
     throw new Error("URL must have a domain");
   }
 
-  // Default the port to '8123' if not present
-  if (!parsedURL.port) {
+  // HTTPS endpoints (including Railway's proxy) use the standard TLS port.
+  if (!parsedURL.port && parsedURL.protocol === "http:") {
     parsedURL.port = "8123";
   }
 

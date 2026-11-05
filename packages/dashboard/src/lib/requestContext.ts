@@ -16,6 +16,7 @@ import { assertUnreachable } from "isomorphic-lib/src/typeAssertions";
 import { err, ok, Result } from "neverthrow";
 import { GetServerSideProps, NextApiRequest } from "next";
 
+import { sessionHeaders } from "./sessionHeaders";
 import { GetDFServerSideProps, PropsWithInitialState } from "./types";
 
 const backendConfig = backendConfigFromLib;
@@ -28,7 +29,10 @@ export const requestContext: <T>(
   (gssp) => async (context) => {
     // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
     const { profile } = context.req as { profile?: OpenIdProfile };
-    const rc = await getRequestContext(context.req.headers, profile);
+    const rc = await getRequestContext(
+      await sessionHeaders(context.req.headers),
+      profile,
+    );
     const { onboardingUrl } = backendConfig();
     if (rc.isErr()) {
       const { error } = rc;
@@ -148,7 +152,10 @@ export interface ApiRequestContextError {
 export async function apiAuth(
   req: NextApiRequest,
 ): Promise<Result<DFRequestContext, ApiRequestContextError>> {
-  const rc = await getRequestContext(req.headers, undefined);
+  const rc = await getRequestContext(
+    await sessionHeaders(req.headers),
+    undefined,
+  );
 
   if (rc.isOk()) {
     return ok(rc.value);
